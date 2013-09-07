@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<div class="row-fluid">
+  <head>
+    <title>vScount</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/interface.css">
+  </head>
+<body>
+
+<div class="tabbable tabs-left">
+  <ul class="nav nav-tabs">
+    <li><a href="#home" data-toggle="tab">DataCenter1</a></li>
+    <li><a href="#profile" data-toggle="tab">DataCenter2</a></li>
+    <li><a href="#messages" data-toggle="tab">DataCenter3</a></li>
+    <li><a href="#settings" data-toggle="tab">DataCenter4</a></li>
+  </ul>
+  <div class="tab-content">
+  <div class="tab-pane active" id="home">
+    <div class="accordion" id="accordion2">
+    <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        VM-Number-1
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+      <div class="accordion-inner">
+        <p><b>Status: </b>Running</p><p><b>O.S.:</b> Ubuntu</p>   <p><a href="url">Start</a> | <a href="url">Suspend</a> | <a href="url">Shutdown</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        VM-Number-2
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+        Status: Running   Operating System: Ubuntu   Start | Suspend | Shutdown
+      </div>
+    </div>
+  </div>
+</div></div>
+  <div class="tab-pane" id="profile">..b.</div>
+  <div class="tab-pane" id="messages">..c.</div>
+  <div class="tab-pane" id="settings">...d</div>
+</div>
+</div>
+ 
+<script>
+$(document).ready(function(){
+    $('#content').height($(window).height());
+    $('#content').width($(window).width());
+    $(function () {
+      $('#myTab a:last').tab('show');
+    });
+
+});
+</script>
+</body>
+</div>
+</html>
